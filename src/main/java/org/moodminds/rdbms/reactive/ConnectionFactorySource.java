@@ -49,7 +49,7 @@ public class ConnectionFactorySource implements ConnectionSource {
      */
     @Override
     public Publisher<? extends Connection> getConnection() {
-        return this.connectionFunction.eval(this.connectionFactory);
+        return connectionFunction.eval(connectionFactory);
     }
 
     /**
@@ -57,6 +57,6 @@ public class ConnectionFactorySource implements ConnectionSource {
      */
     @Override
     public ConnectionFactoryMetadata getMetadata() {
-        return this.connectionFactory.getMetadata();
+        return connectionFactory.getMetadata();
     }
 }

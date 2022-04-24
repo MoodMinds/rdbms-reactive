@@ -42,8 +42,8 @@ public class Routes implements org.moodminds.rdbms.route.Routes {
     public Routes(ConnectionSource connectionSource, Consumer1<? super Config> configuration) {
         this.connectionSource = requireNonNull(connectionSource);
         configuration.exec(new Config() {
-            @Override public Config fetch(int fetch) { Routes.this.fetchSize = fetch; return this; }
-            @Override public Config batch(int batch) { Routes.this.batchSize = batch; return this; }
+            @Override public Config fetch(int fetch) { fetchSize = fetch; return this; }
+            @Override public Config batch(int batch) { batchSize = batch; return this; }
         });
     }
 

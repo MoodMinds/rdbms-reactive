@@ -43,7 +43,7 @@ class Sample {
 
     public void subscribe() {
 
-        new Routes(connectionSource).stream(FIRST_NAMES, 42) // materialize to EmittableFlux<String, RuntimeException>
+        new Routes(connectionSource).stream(FIRST_NAMES, 42) // materialize to FluxEmittable<String, RuntimeException>
                 .subscribe(s -> LOG.info(s));
     }
 }

@@ -27,8 +27,8 @@ class Sample {
     static final Logger LOG = Logger.getLogger(Sample.class.getName());
 
     static final Script<Query1<String>> FIRST_NAMES_QUERY = $$ -> $$
-            .query1("SELECT firstname FROM PERSON WHERE age > :age", p -> p
-                .param(Integer.class));
+            .query1("SELECT firstname FROM PERSON WHERE age > :age")
+                .type(Integer.class);
 
     static final Stream1<Integer, String, RuntimeException> FIRST_NAMES = ($, age) -> $
             .search(FIRST_NAMES_QUERY)

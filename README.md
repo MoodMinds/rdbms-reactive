@@ -26,7 +26,7 @@ class Sample {
 
     static final Logger LOG = Logger.getLogger(Sample.class.getName());
 
-    static final Script<Query1<String>> FIRST_NAMES_QUERY = $$ -> $$
+    static final Script<Query1<String>> FIRST_NAMES_QUERY = ($$, t) -> $$
             .query1("SELECT firstname FROM PERSON WHERE age > :age")
                 .type(Integer.class);
 

@@ -13,11 +13,11 @@ to see how it can be expressed and materialized:
 ```java
 import io.r2dbc.spi.ConnectionFactories;
 import org.moodminds.rdbms.clause.Script;
+import org.moodminds.rdbms.lang.Query1;
 import org.moodminds.rdbms.reactive.ConnectionFactorySource;
 import org.moodminds.rdbms.reactive.ConnectionSource;
 import org.moodminds.rdbms.reactive.route.Routes;
 import org.moodminds.rdbms.route.Stream1;
-import org.moodminds.rdbms.statement.Query1;
 
 import java.util.logging.Logger;
 

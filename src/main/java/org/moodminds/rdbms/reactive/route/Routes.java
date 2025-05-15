@@ -19,8 +19,8 @@ import org.moodminds.route.Route5;
 import org.moodminds.route.Route6;
 import org.moodminds.route.Route7;
 import org.moodminds.route.Route8;
-import org.moodminds.route.reactive.FluxEmittable;
-import org.moodminds.route.reactive.MonoEmittable;
+import org.moodminds.reactive.FluxEmittable;
+import org.moodminds.reactive.MonoEmittable;
 
 import static java.util.Objects.requireNonNull;
 
